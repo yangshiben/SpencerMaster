@@ -1,0 +1,23 @@
+{
+  "name": "SpencerHome",
+  "description": "This is my bower",
+  "main": "",
+  "authors": [
+    "Sben"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "spencer"
+  ],
+  "homepage": "https://github.com/yangshiben/SpencerMaster",
+  "private": true,
+  "dependencies": {
+    "angular-cookies": "^1.6.4",
+    "angular-file-upload": "^2.5.0",
+    "angular-ui-router": "^1.0.3",
+    "angular": "1.6.4",
+    "angular-route": "^1.6.4",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
