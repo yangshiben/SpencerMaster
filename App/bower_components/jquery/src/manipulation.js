@@ -171,7 +171,7 @@ function domManip( collection, args, callback, ignored ) {
 				if ( i !== iNoClone ) {
 					node = jQuery.clone( node, true, true );
 
-					// Keep references to cloned scripts for later restoration
+					// Keep references to cloned Scripts for later restoration
 					if ( hasScripts ) {
 
 						// Support: Android <=4.0 only, PhantomJS 1 only
@@ -186,10 +186,10 @@ function domManip( collection, args, callback, ignored ) {
 			if ( hasScripts ) {
 				doc = scripts[ scripts.length - 1 ].ownerDocument;
 
-				// Reenable scripts
+				// Reenable Scripts
 				jQuery.map( scripts, restoreScript );
 
-				// Evaluate executable scripts on first document insertion
+				// Evaluate executable Scripts on first document insertion
 				for ( i = 0; i < hasScripts; i++ ) {
 					node = scripts[ i ];
 					if ( rscriptType.test( node.type || "" ) &&
@@ -198,7 +198,7 @@ function domManip( collection, args, callback, ignored ) {
 
 						if ( node.src ) {
 
-							// Optional AJAX dependency, but won't run scripts if not present
+							// Optional AJAX dependency, but won't run Scripts if not present
 							if ( jQuery._evalUrl ) {
 								jQuery._evalUrl( node.src );
 							}

@@ -13,7 +13,7 @@ define( [
 // Argument "data" should be string of html
 // context (optional): If specified, the fragment will be created in this context,
 // defaults to document
-// keepScripts (optional): If true, will include scripts passed in the html string
+// keepScripts (optional): If true, will include Scripts passed in the html string
 jQuery.parseHTML = function( data, context, keepScripts ) {
 	if ( typeof data !== "string" ) {
 		return [];
@@ -27,7 +27,7 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 
 	if ( !context ) {
 
-		// Stop scripts or inline event handlers from being executed immediately
+		// Stop Scripts or inline event handlers from being executed immediately
 		// by using document.implementation
 		if ( support.createHTMLDocument ) {
 			context = document.implementation.createHTMLDocument( "" );

@@ -1832,7 +1832,7 @@ function angularInit(element, bootstrap) {
  *
  * Angular will detect if it has been loaded into the browser more than once and only allow the
  * first loaded script to be bootstrapped and will report a warning to the browser console for
- * each of the subsequent scripts. This prevents strange results in applications, where otherwise
+ * each of the subsequent Scripts. This prevents strange results in applications, where otherwise
  * multiple instances of Angular try to work on the DOM.
  *
  * <div class="alert alert-warning">
@@ -12617,7 +12617,7 @@ function createHttpBackend($browser, createXhr, $browserDefer, callbacks, rawDoc
   function jsonpReq(url, callbackPath, done) {
     url = url.replace('JSON_CALLBACK', callbackPath);
     // we can't use jQuery/jqLite here because jQuery does crazy stuff with script elements, e.g.:
-    // - fetches local scripts via XHR and evals them
+    // - fetches local Scripts via XHR and evals them
     // - adds and immediately removes script elements from the document
     var script = rawDocument.createElement('script'), callback = null;
     script.type = 'text/javascript';
@@ -26893,7 +26893,7 @@ var ngControllerDirective = [function() {
           });
 
           // For now, we only test on Chrome,
-          // as Safari does not load the page with Protractor's injected scripts,
+          Scripts
           // and Firefox webdriver always disables content security policy (#6358)
           if (browser.params.browser !== 'chrome') {
             return;
