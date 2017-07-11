@@ -1894,7 +1894,7 @@ function bootstrap(element, modules, config) {
       // Encode angle brackets to prevent input from being sanitized to empty string #8683.
       throw ngMinErr(
           'btstrpd',
-          'App already bootstrapped with this element \'{0}\'',
+          'web already bootstrapped with this element \'{0}\'',
           tag.replace(/</,'&lt;').replace(/>/,'&gt;'));
     }
 
