@@ -9,10 +9,10 @@
     "express": "^4.15.3"
   },
   "scripts": {
+    "start": "node app.js",
     "postinstall": "bower install",
     "postupdate-deps": "bower update",
     "prestart": "npm install",
-    "start": "http-server -p 6060 -c-1 ./App",
     "pretest": "npm install",
     "test": "karma start karma.conf.js"
   },
