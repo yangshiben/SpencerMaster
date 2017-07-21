@@ -25,12 +25,13 @@
                     <div class="land_modal_content">
                         <h3 class="modal-title login_center text-bold">登录你的账户</h3>
                         <h4 class="login_center" style="font-style: normal">这是走进美妙世界的第一步</h4>
-                        <form id="new_user" accept-charset="UTF-8" method="post" class="l-p-d">
+                        <form name="loginForm" accept-charset="UTF-8" method="post" class="l-p-d" novalidate>
                             <fieldset class="form-group">
-                                <input class="form-control land-box" id="user_mail" placeholder="电子邮箱" type="email" required>
+                                <input class="form-control land-box" id="user_mail" placeholder="电子邮箱" type="email" ng-model="loginInfo.email"required>
                             </fieldset>
                             <fieldset>
-                                <input class="form-control land-box" id="user_password" placeholder="密码" type="password"  maxlength="20" required>
+                                <input class="form-control land-box" id="user_password" placeholder="密码" type="password"  maxlength="20"
+                                       ng-model="loginInfo.password" required>
                             </fieldset>
                             <div class="l-m-g">
                                 <label for="signin" style="color: grey;font-size: small" >
@@ -40,7 +41,7 @@
                                 <p style="float: right;font-size: small"><a href="javascript:void(0)">忘记密码？</a></p>
                             </div>
                             <div class="btn-m-b">
-                                <button type="submit" class="btn btn-primary btn-block  btn-login">登录</button>
+                                <button type="submit" class="btn btn-primary btn-block  btn-login" ng-click="loginDo()" ng-disabled="loginForm.$invalid">登录</button>
                             </div>
                             <div class="line-divider-wrapper">
                             </div>
@@ -88,7 +89,7 @@
                                 <li class="land_menu-item land_menu-signin list-inline-item" >
                                     <a class="bar-a" href="#">Library</a>
                                 </li>
-                                <li class=" land_menu-signin  land_login-btn " data-toggle="modal" data-target="#signin_modal"style="margin-right: auto">
+                                <li class=" land_menu-signin  land_login-btn " style="margin-right: auto" ng-click="showModal('signin_modal')">
                                     <p>登录</p>
                                 </li>
                                 <li class="land_menu-signin   land_signup-btn">
@@ -220,3 +221,4 @@
         <h2 class="land-message m-b-3" >学习搭建在任何市场范围内的社交网站</h2>
     </div>
 </div>
+<!--<script src="../scripts/controllers/homeController.js"></script>-->
